@@ -12,9 +12,15 @@
  * 
  */
 
-let numeroPi = Math.PI
-console.log("Valor de PI:", numeroPi)
+let numeroPi = Math.PI;
+let radio = 3;
+let area = numeroPi * (radio ** 2);
+console.log(area);
+console.log("Valor de PI:", numeroPi);
+console.log(`El area de un círculo de radio ${radio} es de ${area} m2`);
 
 /**
  * BONUS: Muestra el mensaje de tal manera que el número devuelto esté redondeado a dos decimales. Es decir, para un radio de 3, el mensaje debería ser: ""El area de un círculo de radio 3 es de 28.27 m2"
  */
+
+console.log(`El area de un círculo de radio ${radio} es de ${area.toFixed(2)} m2`);
